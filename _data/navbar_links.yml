@@ -1,0 +1,22 @@
+
+---
+-   name: "Home"
+    url: "/"
+ 
+-   name: "Documentation"
+    url: "/documentation/"
+ 
+-   name: "Updates"
+    url: "/updates/"
+
+-   name: "Blog Archive"
+    url: "/updates/archive/"
+
+-   name: "Apel Packages"
+    url: "/rpms/"
+ 
+-   name: "Apel SRPM Packages"
+    url: "/srpms/"
+
+-   name: "Legacy Versions"
+    url: "/archive/"
