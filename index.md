@@ -1,9 +1,13 @@
 ---
 layout: home
-title: APEL client and server source code
+title: Home
+subheading: APEL client and server source code
 zipball-link: https://github.com/apel/apel/zipball/master
 tarball-link: https://github.com/apel/apel/tarball/master
 project-url: https://github.com/apel/apel
+css-styles: stylesheets/styles.css
+css-pyg: stylesheets/pygment_trac.css
+js-scale: javascripts/scale.fix.js
 ---
 
 #Welcome to APEL
@@ -12,9 +16,9 @@ This is the GitHub Page for APEL.
 
 ##RPM downloads
 
-[SL5 and SL6](https://apel.github.io/rpms/)
+[SL5 and SL6](../apel/rpms/)
 
-[Source RPMs](https://apel.github.io/srpms/)
+[Source RPMs](../apel/srpms/)
 
 ##Maintainers
 
