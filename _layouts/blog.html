@@ -4,8 +4,9 @@
     <header>
         <h1>{{site.name}}</h1>
         <p>{{page.subheading}}</p>
+        &nbsp;
+        {% include nav.html %}
     </header>
-    {% include nav.html %}
     <section>
         <h1> {{page.title}}</h1>
 
@@ -22,10 +23,12 @@
             </table>
         </section>
 
+        &nbsp;
+
         <section>
             <table>
             {% for post in site.posts offset:1 limit:2 %}
-            <td>
+            <td width="200px">
                 <a href="{{ post.url }}">
                 <h3>{{ post.title }}</h3>   
                 <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
@@ -35,10 +38,6 @@
             {% endfor %}
             </table>
         </section>
-
-        
-        <a href="../updates/archive/">Older Posts</a>
-
     </section>
 </div>
 {% include foot.html %}
