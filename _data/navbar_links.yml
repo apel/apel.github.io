@@ -9,9 +9,6 @@
 -   name: "Updates"
     url: "/updates/"
 
--   name: "Blog Archive"
-    url: "/updates/archive/"
-
 -   name: "Apel Packages"
     url: "/rpms/"
  
@@ -20,3 +17,6 @@
 
 -   name: "Legacy Versions"
     url: "/archive/"
+
+-   name: "Blog Archive"
+    url: "/updates/archive/"

@@ -1,25 +1,7 @@
 ---
-layout: default
-title: Archive
+layout: archive
+title: Legacy Versions
 subheading: APEL client and server source code
 ---
 
-##Legacy Tarballs
-
-
-###Some links here
-a
-
-b
-
-c
-
-##Legacy Zip
-
-
-###Some Links here
-a
-
-b
-
-c
+Here are the legacy versions for APEL.

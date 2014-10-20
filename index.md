@@ -11,6 +11,12 @@ project-url: https://github.com/apel/apel
 
 This is the GitHub Page for APEL.
 
+##APEL Status
+
+[![Build Status](https://travis-ci.org/apel/apel.svg?branch=dev)](https://travis-ci.org/apel/apel)
+[![Coverage Status](https://coveralls.io/repos/apel/apel/badge.png?branch=dev)](https://coveralls.io/r/apel/apel?branch=dev)
+[![Code Health](https://landscape.io/github/apel/apel/dev/landscape.png)](https://landscape.io/github/apel/apel/dev)
+
 ##RPM downloads
 
 [SL5 and SL6](../rpms/)

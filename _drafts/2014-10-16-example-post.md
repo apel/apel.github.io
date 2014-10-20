@@ -1,6 +1,6 @@
 ---
 #Only Change the Title Attribute
-layout: default
+layout: post
 title: Example Post
 subheading: APEL client and server source code
 ---
