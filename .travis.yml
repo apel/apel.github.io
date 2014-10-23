@@ -4,7 +4,8 @@ rvm:
 
 install:
   - gem install jekyll
+  - gem install html-proofer
 
 script:
   - jekyll build
-  #- htmlproof ./_site
+  - htmlproof ./_site
