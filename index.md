@@ -19,9 +19,9 @@ This is the GitHub Page for APEL.
 
 ##RPM downloads
 
-[SL5 and SL6](../rpms/)
+[SL5 and SL6](/rpms/)
 
-[Source RPMs](../srpms/)
+[Source RPMs](/srpms/)
 
 ##Maintainers
 
