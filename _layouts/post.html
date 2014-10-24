@@ -1,0 +1,26 @@
+{% include head.html %}
+
+<div class="wrapper">
+    <header>
+        <h1>{{site.name}}</h1>
+        <p>{{page.subheading}}</p>
+        &nbsp;
+        {% include nav.html %}
+    </header>
+    <section>
+        <h1> {{page.title}}</h1>
+
+        {{content}}
+
+        &nbsp;
+        <table>
+            <td style="border: 1px solid black">
+                <a href="/updates/">Back to Updates</a>
+            </td>
+            <td style="border: 1px solid black">
+                <a href="/updates/archive/">Browse other posts</a>
+            </td>
+        </table>
+    </section>
+</div>
+{% include foot.html %}

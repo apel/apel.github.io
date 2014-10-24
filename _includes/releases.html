@@ -1,0 +1,26 @@
+<table style="width: 500px; margin: auto">
+    <trhead>
+        <td>
+            <h2>Tar-Balls</h2>
+        </td>
+        <td>
+            <h2>ZIP Files</h2>
+        </td>
+    </trhead>
+    <tbody>
+        <td>
+            {% for release in site.data.releases %}
+            <li>
+                <a href="{{release.tar-url}}">{{release.name}}</a>
+            </li>
+            {% endfor %}
+        </td>
+        <td>
+            {% for release in site.data.releases %}
+            <li>
+                <a href="{{release.zip-url}}">{{release.name}}</a>
+            </li>
+            {% endfor %}
+        </td>
+    </tbody>
+</table>
