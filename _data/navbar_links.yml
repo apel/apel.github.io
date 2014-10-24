@@ -9,10 +9,10 @@
 -   name: "Updates"
     url: "/updates/"
 
--   name: "Apel Packages"
+-   name: "Software RPMs"
     url: "/rpms/"
  
--   name: "Apel SRPM Packages"
+-   name: "Source RPMs"
     url: "/srpms/"
 
 -   name: "Legacy Versions"

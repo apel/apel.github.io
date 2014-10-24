@@ -1,5 +1,5 @@
 # Where things are
-name: Apel
+name: APEL
 source:      .
 destination: ./_site
 plugins:     ./_plugins

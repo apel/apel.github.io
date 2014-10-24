@@ -4,8 +4,6 @@ title: Documentation
 subheading: APEL client and server source code
 ---
 
-##Wiki-page
-
-Welcome to the Documentation of the Apel Project
+Welcome to the documentation page for the APEL Project
 
 Relative links can be found here.
