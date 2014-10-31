@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: Legacy Versions
+title: Old Versions
 subheading: APEL client and server source code
 ---
 
-Here are the legacy versions for APEL.
+Here are the olf versions for APEL.

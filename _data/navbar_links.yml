@@ -15,8 +15,5 @@
 -   name: "Source RPMs"
     url: "/srpms/"
 
--   name: "Legacy Versions"
+-   name: "Old Versions"
     url: "/archive/"
-
--   name: "Blog Archive"
-    url: "/updates/archive/"
