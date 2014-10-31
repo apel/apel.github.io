@@ -1,0 +1,21 @@
+{% include head.html %}
+<div class="wrapper">
+    <header>
+        <h1>{{ site.name }}</h1>
+        <p>{{page.subheading}}</p>
+         
+        <ul>
+            <li><a href="{{page.zipball-link}}">Download <strong>ZIP File</strong></a></li>
+            <li><a href="{{page.tarball-link}}">Download <strong>TAR Ball</strong></a></li>
+            <li><a href="{{page.project-url}}">View On <strong>GitHub</strong></a></li>
+        </ul>
+        &nbsp;
+        {% include nav.html %}
+    </header>
+    <section>
+
+    {{ content }}
+
+    </section>
+</div>
+{% include foot.html %}
