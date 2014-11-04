@@ -3,12 +3,14 @@
     <header>
         <h1>{{ site.name }}</h1>
         <p>{{page.subheading}}</p>
-         
+
         <ul>
-            <li><a href="{{page.zipball-link}}">Download <strong>ZIP File</strong></a></li>
-            <li><a href="{{page.tarball-link}}">Download <strong>TAR Ball</strong></a></li>
+            <li><a class="apel-zip-download" href="https://github.com/apel/apel/releases/latest">Download <strong>ZIP File</strong></a></li>
+            <li><a class="apel-tar-download" href="https://github.com/apel/apel/releases/latest">Download <strong>TAR Ball</strong></a></li>
             <li><a href="{{page.project-url}}">View On <strong>GitHub</strong></a></li>
         </ul>
+        <p class="release-info"></p>
+
         &nbsp;
         {% include nav.html %}
     </header>
@@ -17,5 +19,79 @@
     {{ content }}
 
     </section>
+
+    <!-- Get Latest Release -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            GetLatestReleaseInfo();
+        });
+
+        function GetLatestReleaseInfo() {
+            $.getJSON("https://api.github.com/repos/apel/apel/releases")
+                // Successful JSON request
+                .success(function (json) {
+
+                    var found = false;
+                    var objCount = 0;
+
+                    while (found == false) {
+
+                        //Find Latest Release
+                        if (json[objCount].prerelease != true) {
+                            //Output info to console log
+                            console.log(json[objCount].tag_name);
+                            console.log(json[objCount].created_at);
+                            console.log(json[objCount].zipball_url);
+                            console.log(json[objCount].tarball_url);
+                            console.log(json[objCount].assets);
+
+                            //Set HREFs to relevant urls
+                            $(".apel-zip-download").attr("href", json[objCount].zipball_url);
+                            $(".apel-tar-download").attr("href", json[objCount].tarball_url);
+
+                            // exit loop
+                            found = true;
+                        }
+
+                        objCount++;
+                    }
+
+                    // Output success
+                    console.log("Request Success");
+
+                    /*/////////////////////////
+                    //  Debug: Use to see all 'latest' releases
+                    ///////////////////////////
+                    var objCount = 0;
+                    for (x in json) {
+                        objCount++;
+                    }
+
+                    var latest = [];
+                    var latCount = 0;
+
+                    for (var x = 0; x < objCount; x++) {
+                        if (json[x].prerelease != true) {
+                            latest[latCount] = json[x];
+                            latCount++;
+                        }
+                    }
+
+                    for (var x = 0; x < latCount; x++) {
+                        console.log(latest[x].tag_name);
+                        console.log(latest[x].created_at);
+                        console.log(latest[x].zipball_url);
+                        console.log(latest[x].tarball_url);
+                    }
+                    */
+                    //////////////////////////////////////
+
+                })// Inform of JSON Error
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    console.log("Request Failed: " + err);
+                });
+        }
+    </script>
 </div>
 {% include foot.html %}

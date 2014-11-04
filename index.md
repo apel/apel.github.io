@@ -2,8 +2,6 @@
 layout: home
 title: APEL
 subheading: APEL client and server source code
-zipball-link: https://github.com/apel/apel/zipball/master
-tarball-link: https://github.com/apel/apel/tarball/master
 project-url: https://github.com/apel/apel
 ---
 
