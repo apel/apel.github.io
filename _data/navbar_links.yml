@@ -9,7 +9,7 @@
 -   name: "News"
     url: "/news/"
 
--   name: "APEL RPMs"
+-   name: "APEL Packages"
     url: "/rpms/"
  
 -   name: "Old Versions"
