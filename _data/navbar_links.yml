@@ -6,8 +6,8 @@
 -   name: "Documentation"
     url: "/documentation/"
  
--   name: "Updates"
-    url: "/updates/"
+-   name: "News"
+    url: "/news/"
 
 -   name: "Software RPMs"
     url: "/rpms/"

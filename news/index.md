@@ -1,7 +1,7 @@
 ---
 layout: blog
-title: Updates
+title: News
 subheading: APEL client and server source code
 ---
 
-Updates will be posted here.
+News will be posted here.

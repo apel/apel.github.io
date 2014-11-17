@@ -1,0 +1,130 @@
+{% include head.html %}
+<div class="wrapper">
+    <header>
+        <h1>{{ site.name }}</h1>
+        <p>{{page.subheading}}</p>
+
+        &nbsp;
+        {% include nav.html %}
+    </header>
+
+    <section>
+
+    {{ content }}
+        <h2 class="version"></h2>
+
+        <div hidden id="sl-type">{{page.type}}</div>
+
+        <ul>
+            <li><a class="apel-src-download" href="https://github.com/apel/apel/releases/latest">Source</a></li>
+            <li><a class="apel-client-download" href="https://github.com/apel/apel/releases/latest">Client</a></li>
+            <li><a class="apel-server-download" href="https://github.com/apel/apel/releases/latest">Server</a></li>
+            <li><a class="apel-lib-download" href="https://github.com/apel/apel/releases/latest">Lib</a></li>
+            <li><a class="apel-parsers-download" href="https://github.com/apel/apel/releases/latest">Parsers</a></li>
+        </ul>
+
+
+    </section>
+
+    <!-- Get Latest Release -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            GetLatestReleaseInfo();
+        });
+
+        function GetLatestReleaseInfo() {
+            $.getJSON("https://api.github.com/repos/apel/apel/releases")
+            // Successful JSON request
+                .success(function (json) {
+
+                    var type = document.getElementById("sl-type").textContent;
+
+                    if (type == "SL5") {
+                        type = "el5";
+                    }
+                    else {
+                        type = "el6";
+                    }
+
+                    var found = false;
+                    var objCount = 0;
+
+                    while (found == false) {
+
+                        //Find Latest Release
+                        if (json[objCount].prerelease != true) {
+                            //Output info to console log
+                            console.log(json[objCount].tag_name);
+                            console.log(json[objCount].created_at);
+                            console.log(json[objCount].assets);
+
+                            var rpms = [];
+
+                            for (var x = 0; x < 10; x++) {
+                                var data = json[objCount].assets[x].name;
+
+                                if (data.indexOf(type) >= 0) {
+                                    rpms.push(json[objCount].assets[x]);
+                                }
+                            }
+
+                            for (var x = 0; x < 5; x++) {
+                                console.log(rpms[x].name);
+                            }
+
+                            $(".apel-src-download").attr("href", rpms[0].browser_download_url);
+                            $(".apel-client-download").attr("href", rpms[1].browser_download_url);
+                            $(".apel-lib-download").attr("href", rpms[2].browser_download_url);
+                            $(".apel-parsers-download").attr("href", rpms[3].browser_download_url);
+                            $(".apel-server-download").attr("href", rpms[4].browser_download_url);
+
+
+                            //Set HREFs to relevant urls
+                            $(".version").text("Version: " + json[objCount].tag_name);
+
+                            // exit loop
+                            found = true;
+                        }
+
+                        objCount++;
+                    }
+
+                    // Output success
+                    console.log("Request Success");
+
+                    /*/////////////////////////
+                    //  Debug: Use to see all 'latest' releases
+                    ///////////////////////////
+                    var objCount = 0;
+                    for (x in json) {
+                    objCount++;
+                    }
+
+                    var latest = [];
+                    var latCount = 0;
+
+                    for (var x = 0; x < objCount; x++) {
+                    if (json[x].prerelease != true) {
+                    latest[latCount] = json[x];
+                    latCount++;
+                    }
+                    }
+
+                    for (var x = 0; x < latCount; x++) {
+                    console.log(latest[x].tag_name);
+                    console.log(latest[x].created_at);
+                    console.log(latest[x].zipball_url);
+                    console.log(latest[x].tarball_url);
+                    }
+                    */
+                    //////////////////////////////////////
+
+                })// Inform of JSON Error
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    console.log("Request Failed: " + err);
+                });
+        }
+    </script>
+</div>
+{% include foot.html %}
