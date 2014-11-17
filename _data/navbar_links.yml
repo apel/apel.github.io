@@ -9,11 +9,8 @@
 -   name: "News"
     url: "/news/"
 
--   name: "Software RPMs"
+-   name: "APEL RPMs"
     url: "/rpms/"
  
--   name: "Source RPMs"
-    url: "/srpms/"
-
 -   name: "Old Versions"
     url: "/archive/"
