@@ -3,6 +3,10 @@
 layout: post
 title: Example Post
 subheading: APEL client and server source code
+tags:
+- Add Tags Like this
+- Example1
+- Example2
 ---
 #Format
 The filename must be in this format: YYYY-MM-DD-TITLE.MARKUP
