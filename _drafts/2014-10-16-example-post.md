@@ -2,7 +2,6 @@
 #Only Change the Title Attribute
 layout: post
 title: Example Post
-subheading: APEL client and server source code
 tags:
 - Add Tags Like this
 - Example1

@@ -1,7 +1,5 @@
 ---
 layout: blog
 title: News
-subheading: APEL client and server source code
+subheading: Latest Project News, Updates and Releases
 ---
-
-News will be posted here.

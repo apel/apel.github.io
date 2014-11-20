@@ -1,19 +1,15 @@
-{% include head.html %}
+---
+layout: default
+---
+{% include wrap.html %}
 
-<div class="wrapper">
-    <header>
-        <h1>{{site.name}}</h1>
-        <p>{{page.subheading}}</p>
-        &nbsp;
-        {% include nav.html %}
-    </header>
-    <section>
-        <h1> {{page.title}}</h1>
-
-        {{content}}
-
-        {% include releases.html %}
-
-    </section>
+<div class="service">
+    <div class="container mtb">
+        <div class="row">
+            {{content}}
+        </div>
+        <div class="row">
+            {% include releases.html %}
+        </div>
+    </div>
 </div>
-{% include foot.html %}

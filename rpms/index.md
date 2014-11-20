@@ -1,12 +1,9 @@
 ---
-layout: default
-title: APEL Packages
-subheading: APEL client and server source code
+layout: page
+title: Packages
+subheading: Download Software and Source RPMs for APEL.
 ---
 
-Download Software and Source RPMs for APEL.
-
----
 
 ##Software RPMs
 

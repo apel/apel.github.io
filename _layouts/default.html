@@ -1,18 +1,14 @@
-{% include head.html %}
+<!DOCTYPE html>
+<html>
 
-<div class="wrapper">
-    <header>
-        <h1>{{site.name}}</h1>
-        <p>{{page.subheading}}</p>
-        &nbsp;
+    {% include head.html %}
+
+    <body>
         {% include nav.html %}
-    </header>
-    <section>
-        <h1> {{page.title}}</h1>
 
-        {{content}}
+            {{ content }}
 
-    </section>
-</div>
-
-{% include foot.html %}
+        {% include footer.html %}
+        {% include js.html %}
+    </body>
+</html>

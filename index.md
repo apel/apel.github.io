@@ -1,7 +1,6 @@
 ---
 layout: home
-title: APEL
-subheading: APEL client and server source code
+title: Home
 project-url: https://github.com/apel/apel
 ---
 

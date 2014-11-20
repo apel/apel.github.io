@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Test Three
-subheading: APEL client and server source code
 tags:
 - Update
 - Testing

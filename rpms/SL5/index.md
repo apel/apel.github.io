@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: page
 title: SL5 APEL Packages
-subheading: APEL client and server source code
 ---
-
-[..](/rpms)
 
 [apel-client-1.1.3-0.el5.noarch.rpm](../SL5/apel-client-1.1.3-0.el5.noarch.rpm)
 

@@ -1,112 +1,110 @@
-{% include head.html %}
-<div class="wrapper">
-    <header>
-        <h1>{{ site.name }}</h1>
-        <p>{{page.subheading}}</p>
+---
+layout: default
+---
 
-        <ul>
-            <li><a class="apel-SL5-download" href="/rpms/latest/SL5">Download <strong>SL5 RPM</strong></a></li>
-            <li><a class="apel-SL6-download" href="/rpms/latest/SL6">Download <strong>SL6 RPM</strong></a></li>
-            <li><a class="apel-tar-download" href="https://github.com/apel/apel/releases/latest">Download <strong>TAR Ball</strong></a></li>
-            <li><a href="{{page.project-url}}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        <p class="release-info"></p>
+{% include wrap.html %}
 
-        &nbsp;
-        {% include nav.html %}
-    </header>
+<div class="service">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-md-6 col-md-push-3">
+                <h1> Download APEL </h1>
+                <a id ="sl5-download" class="btn btn-theme" href="/rpms/latest/SL5">Download <strong>SL5 RPM</strong></a>
+                <a id ="sl6-download" class="btn btn-theme" href="/rpms/latest/SL6">Download <strong>SL6 RPM</strong></a>
+                <a id ="tarball-download"class="btn btn-theme" href="https://github.com/apel/apel/releases/latest">Download <strong>TAR Ball</strong></a>
+                <a class="btn btn-theme" href="{{page.project-url}}">View On <strong>GitHub</strong></a>
+            </div>
+        </div>
+    </div>
 
-    <section style="float:  left; width: 40%">
+    <div class="container mtb">
+            <div class="col-md-6">
   
-    {{ content }}
+            {{ content }}
 
-    </section>
-
-    <section style="float:  right; width: 50%; height: 590px;">
-            <h1>Latest News</h1>
-            {% for post in site.posts limit:1 %}
-                <a href="{{ post.url }}">
-                <h2>{{ post.title }}</h2>
-                <p> Tags: 
-                    {% for tag in post.tags %}
-                        <a href="/tag/{{tag}}">{{tag}} </a>
-                    {% endfor %} 
-                </p>
-                <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
-                <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
-                </a>
-            {% endfor %}
-    </section>
-    <!-- Get Latest Release -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            GetLatestReleaseInfo();
-        });
-
-        function GetLatestReleaseInfo() {
-            $.getJSON("https://api.github.com/repos/apel/apel/releases")
-                // Successful JSON request
-                .success(function (json) {
-
-                    var found = false;
-                    var objCount = 0;
-
-                    while (found == false) {
-
-                        //Find Latest Release
-                        if (json[objCount].prerelease != true) {
-                            //Output info to console log
-                            console.log(json[objCount].tag_name);
-                            console.log(json[objCount].created_at);
-                            console.log(json[objCount].tarball_url);
-                            console.log(json[objCount].assets);
-
-                            //Set HREFs to relevant urls
-                            $(".apel-tar-download").attr("href", json[objCount].tarball_url);
-
-                            // exit loop
-                            found = true;
-                        }
-
-                        objCount++;
-                    }
-
-                    // Output success
-                    console.log("Request Success");
-
-                    /*/////////////////////////
-                    //  Debug: Use to see all 'latest' releases
-                    ///////////////////////////
-                    var objCount = 0;
-                    for (x in json) {
-                        objCount++;
-                    }
-
-                    var latest = [];
-                    var latCount = 0;
-
-                    for (var x = 0; x < objCount; x++) {
-                        if (json[x].prerelease != true) {
-                            latest[latCount] = json[x];
-                            latCount++;
-                        }
-                    }
-
-                    for (var x = 0; x < latCount; x++) {
-                        console.log(latest[x].tag_name);
-                        console.log(latest[x].created_at);
-                        console.log(latest[x].zipball_url);
-                        console.log(latest[x].tarball_url);
-                    }
-                    */
-                    //////////////////////////////////////
-
-                })// Inform of JSON Error
-                .fail(function (jqxhr, textStatus, error) {
-                    var err = textStatus + ", " + error;
-                    console.log("Request Failed: " + err);
-                });
-        }
-    </script>
+            </div>
+            <div class="col-md-5 col-md-push-1">
+                    <h1>Latest News</h1>
+                    {% for post in site.posts limit:1 %}
+                        <a href="{{ post.url }}">
+                        <h2>{{ post.title }}</h2>
+                        <p> Tags: 
+                            {% for tag in post.tags %}
+                                <a href="/tag/{{tag}}">{{tag}} </a>
+                            {% endfor %} 
+                        </p>
+                        <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
+                        <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
+                        </a>
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
 </div>
-{% include foot.html %}
+
+<script src="{{ "/assets/js/jquery-2.1.1.min.js" | prepend: site.baseurl}}"></script>
+<!--Find and Set Latest Tarball-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        GetLatestReleaseInfo();
+    });
+
+    function GetLatestReleaseInfo() {
+        $.getJSON("https://api.github.com/repos/apel/apel/releases")
+            // Successful JSON request
+            .success(function (json) {
+
+                var found = false;
+                var objCount = 0;
+
+                while (found == false) {
+
+                    //Find Latest Release
+                    if (json[objCount].prerelease != true) {
+
+                        //Set HREFs to relevant urls
+                        document.getElementById("tarball-download").href= json[objCount].tarball_url;
+
+                        // exit loop
+                        found = true;
+                    }
+
+                    objCount++;
+                }
+
+                // Output success
+                console.log("Request Success");
+
+                /*/////////////////////////
+                //  Debug: Use to see all 'latest' releases
+                ///////////////////////////
+                var objCount = 0;
+                for (x in json) {
+                    objCount++;
+                }
+
+                var latest = [];
+                var latCount = 0;
+
+                for (var x = 0; x < objCount; x++) {
+                    if (json[x].prerelease != true) {
+                        latest[latCount] = json[x];
+                        latCount++;
+                    }
+                }
+
+                for (var x = 0; x < latCount; x++) {
+                    console.log(latest[x].tag_name);
+                    console.log(latest[x].created_at);
+                    console.log(latest[x].tarball_url);
+                }
+                */
+                //////////////////////////////////////
+
+            })// Inform of JSON Error
+            .fail(function (jqxhr, textStatus, error) {
+                var err = textStatus + ", " + error;
+                console.log("Request Failed: " + err);
+            });
+    }
+</script>
