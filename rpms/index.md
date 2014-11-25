@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Packages
-subheading: Download Software and Source RPMs for APEL.
+title: Downloads
+subheading: Download Software and Source RPMs Packages for APEL.
 ---
 
 
 ##Software RPMs
 
-[SL5](SL5)
+###SL5
 
-[SL6](SL6)
+###SL6
 
 ---
 

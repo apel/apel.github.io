@@ -8,8 +8,73 @@ layout: default
         <div class="row">
             {{content}}
         </div>
-        <div class="row">
-            {% include releases.html %}
+        <div id="tab" class="row">
+            <div class="col-md-5">
+                <h2>Zip Files</h2>
+                <ul id="zip"></ul>
+            </div>
+            <div class="col-md-5 col-md-push-1">
+                <h2>Tar Files</h2>
+                <ul id="tar"></ul>
+            </div>
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        GetLatestReleaseInfo();
+    });
+
+    function GetLatestReleaseInfo() {
+        $.getJSON("https://api.github.com/repos/apel/apel/releases")
+        // Successful JSON request
+            .success(function (json) {
+
+                var objCount = 0;
+
+                while (json[objCount] != null) {
+                    var tag = json[objCount].tag_name;
+                    var zip_url = json[objCount].zipball_url;
+                    var tar_url = json[objCount].tarball_url;
+                    $("#zip").append('<li><a href="'+ zip_url + '"><span class="tab">'+ tag + '</span></a></li>');
+                    $("#tar").append('<li><a href="'+ tar_url + '"><span class="tab">'+ tag + '</span></a></li>');
+                    objCount++;
+                }
+
+                // Output success
+                console.log("Request Success");
+
+                /*/////////////////////////
+                //  Debug: Use to see all 'latest' releases
+                ///////////////////////////
+                var objCount = 0;
+                for (x in json) {
+                objCount++;
+                }
+
+                var latest = [];
+                var latCount = 0;
+
+                for (var x = 0; x < objCount; x++) {
+                if (json[x].prerelease != true) {
+                latest[latCount] = json[x];
+                latCount++;
+                }
+                }
+
+                for (var x = 0; x < latCount; x++) {
+                console.log(latest[x].tag_name);
+                console.log(latest[x].created_at);
+                console.log(latest[x].tarball_url);
+                }
+                */
+                //////////////////////////////////////
+
+            })// Inform of JSON Error
+            .fail(function (jqxhr, textStatus, error) {
+                var err = textStatus + ", " + error;
+                console.log("Request Failed: " + err);
+            });
+    }
+</script>

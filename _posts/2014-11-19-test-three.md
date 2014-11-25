@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Test Three
+author: Josh Hadley
 tags:
 - Update
 - Testing
