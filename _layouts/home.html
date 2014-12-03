@@ -34,7 +34,7 @@ layout: default
                             {% endfor %} 
                         </p>
                         <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
-                        <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
+                        <div>{{ post.excerpt |truncatehtml | truncatewords: 60 }}</div>
                         </a>
                     {% endfor %}
             </div>

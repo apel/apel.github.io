@@ -7,9 +7,9 @@ subheading: Download Software and Source RPMs Packages for APEL.
 
 ##Software RPMs
 
-###SL5
+####[SL5](latest/SL5/)
 
-###SL6
+####[SL6](latest/SL6/)
 
 ---
 

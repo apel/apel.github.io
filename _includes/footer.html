@@ -6,6 +6,26 @@
                 <div class="hline-w"></div>
                 <p>{{ site.about }}</p>
             </div>
+            <!--- Maintainers -->
+            <div class="col-lg-4">
+                <h4>Maintainers</h4>
+                <div class="hline-w"></div>
+                <ul>
+                    {% for person in site.maintainers %}
+                        <li><a href="{{ person.url }}" class="btn-outline">{{ person.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!--- Contributors -->
+            <div class="col-lg-4">
+                <h4>Contributors</h4>
+                <div class="hline-w"></div>
+                <ul>
+                    {% for person in site.contributors %}
+                        <li><a href="{{ person.url }}" class="btn-outline">{{ person.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
             <!--- Social Features 
             <div class="col-lg-4">
                 <h4>Social Links</h4>
