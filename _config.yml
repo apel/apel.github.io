@@ -43,12 +43,7 @@ social:
   - title: tumblr
     url: 
     
-# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
-address:
-  - lines: 
-    - Some Ave, 987,
-    - 23890, New York,
-    - United States.
+# Contact Details (add as many lines as necessary). Shown in footer and on Contact page.
 email: hello@solidtheme.com
 tel: +34 8493-4893
 
