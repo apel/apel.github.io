@@ -9,9 +9,9 @@ layout: default
         <div class="row centered">
             <div class="col-md-6 col-md-push-3">
                 <h1> Download APEL </h1>
-                <a id ="sl5-download" class="btn btn-theme" href="/downloads/latest/SL5">Download <strong>SL5 RPM</strong></a>
-                <a id ="sl6-download" class="btn btn-theme" href="/downloads/latest/SL6">Download <strong>SL6 RPM</strong></a>
-                <a class="btn btn-theme" href="{{page.project-url}}">View On <strong>GitHub</strong></a>
+                <a id ="sl5-download" class="btn btn-theme" href="/downloads/latest/SL5/">Download <strong>SL5 RPM</strong></a>
+                <a id ="sl6-download" class="btn btn-theme" href="/downloads/latest/SL6/">Download <strong>SL6 RPM</strong></a>
+                <a class="btn btn-theme" href="{{ page.project-url }}">View On <strong>GitHub</strong></a>
             </div>
         </div>
     </div>
@@ -25,11 +25,11 @@ layout: default
             <div class="col-md-5 col-md-push-1">
                     <h1>Latest News</h1>
                     {% for post in site.posts limit:1 %}
-                        <a href="{{ post.url }}">
+                        <a href="{{ post.url }}/">
                         <h2>{{ post.title }}</h2>
                         <p> Tags: 
                             {% for tag in post.tags %}
-                                <a href="/tag/{{tag}}">{{tag}} </a>
+                                <a href="/tag/{{tag}}/">{{tag}} </a>
                             {% endfor %} 
                         </p>
                         <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>

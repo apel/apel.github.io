@@ -44,7 +44,7 @@ layout: default
                     if (json[objCount].prerelease != true) {
                         var tag = json[objCount].tag_name;
                         var url = json[objCount].html_url;
-                        $("#apel").append('<li><a href="' + url + '"><span class="tab">' + tag + '</span></a></li>');
+                        $("#apel").append('<li><a href="' + url + '/"><span class="tab">' + tag + '</span></a></li>');
                     }
                     objCount++;
                 }
@@ -96,7 +96,7 @@ layout: default
                     if (json[objCount].prerelease != true) {
                         var tag = json[objCount].tag_name;
                         var url = json[objCount].html_url;
-                        $("#ssm").append('<li><a href="' + url + '"><span class="tab">' + tag + '</span></a></li>');
+                        $("#ssm").append('<li><a href="' + url + '/"><span class="tab">' + tag + '</span></a></li>');
                     }
                     objCount++;
                 }
