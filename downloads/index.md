@@ -1,5 +1,5 @@
 ---
 layout: downloads
 title: Downloads
-subheading: Download Software and Source RPMs Packages for APEL.
+subheading: Download software and source RPM packages for APEL
 ---

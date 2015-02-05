@@ -6,9 +6,15 @@ project-url: https://github.com/apel/apel
 
 #Welcome to APEL
 
-This is the GitHub Page for APEL.
+This is the GitHub Page for the APEL project.
 
-##Status
+APEL is an accounting tool that collects accounting data from sites participating in the EGI and WLCG infrastructures as well as from sites belonging to other Grid organisations that are collaborating with EGI, including OSG, NorduGrid and INFN.
+
+The accounting information is gathered from different sensors into a central accounting database where it is processed to generate statistical summaries that are available through the EGI/WLCG Accounting Portal.
+
+Statistics are available for view in different detail by Users, VO Managers, Site Administrators and anonymous users according to well defined access rights. 
+
+##Software Status
 
 ###APEL
 [![Build Status](https://travis-ci.org/apel/apel.svg?branch=dev)](https://travis-ci.org/apel/apel)

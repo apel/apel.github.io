@@ -38,14 +38,10 @@ social:
     url:
   - title: twitter
     url: 
-  - title: instagram
-    url: 
-  - title: tumblr
-    url: 
-    
+
 # Contact Details (add as many lines as necessary). Shown in footer and on Contact page.
-email: hello@solidtheme.com
-tel: +34 8493-4893
+email: apel-admins@stfc.ac.uk
+tickets: "https://ggus.eu/"
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
     
@@ -66,14 +62,12 @@ contributors:
     url: https://github.com/CJoriginal
   - name: Konrad Jopek
     url: https://github.com/kjopek
+  - name: konvpalto
+    url: https://github.com/konvpalto
+  - name: Pablo Orviz
+    url: https://github.com/orviz
   - name: Will Rogers
     url: https://github.com/willrogers
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-
-# Testimonial content. Shown on Home and About page. 
-testimonial:
-    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-    author: Marcel Newman
-    position: WEB DESIGNER - BLACKTIE.CO
+about: "APEL is an accounting tool that collects accounting data from sites participating in the EGI and WLCG infrastructures as well as from sites belonging to other Grid organisations that are collaborating with EGI, including OSG, NorduGrid and INFN."
