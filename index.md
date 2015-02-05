@@ -1,7 +1,8 @@
 ---
 layout: home
 title: Home
-project-url: https://github.com/apel/apel
+subheading: APEL
+project-url: https://github.com/apel
 ---
 
 #Welcome to APEL
@@ -21,11 +22,11 @@ Statistics are available for view in different detail by Users, VO Managers, Sit
 [![Coverage Status](https://coveralls.io/repos/apel/apel/badge.svg?branch=dev)](https://coveralls.io/r/apel/apel?branch=dev)
 [![Code Health](https://landscape.io/github/apel/apel/dev/landscape.svg?style=flat)](https://landscape.io/github/apel/apel/dev)
 [![GitHub release](https://img.shields.io/github/release/apel/apel.svg)](https://github.com/apel/apel/releases/latest)
-[![](https://img.shields.io/github/issues-raw/apel/apel.svg)](https://github.com/apel/apel/issues)
+[![GitHub issues](https://img.shields.io/github/issues-raw/apel/apel.svg)](https://github.com/apel/apel/issues)
 
 ###SSM
 [![Build Status](https://travis-ci.org/apel/ssm.svg?branch=dev)](https://travis-ci.org/apel/ssm)
 [![Coverage Status](https://coveralls.io/repos/apel/ssm/badge.svg?branch=dev)](https://coveralls.io/r/apel/ssm?branch=dev)
 [![Code Health](https://landscape.io/github/apel/ssm/dev/landscape.svg?style=flat)](https://landscape.io/github/apel/ssm/dev)
 [![GitHub release](https://img.shields.io/github/release/apel/ssm.svg)](https://github.com/apel/ssm/releases/latest)
-[![](https://img.shields.io/github/issues-raw/apel/ssm.svg)](https://github.com/apel/ssm/issues)
+[![GitHub issues](https://img.shields.io/github/issues-raw/apel/ssm.svg)](https://github.com/apel/ssm/issues)

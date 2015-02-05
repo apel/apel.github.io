@@ -2,6 +2,7 @@
 
 # Site settings
 title: APEL
+# Default subheading if not defined in a page's index.md
 subheading: APEL client and server source code
 # The description will appear in the document head meta (for Google search results) and in the feed.xml site description.
 description: "GitHub Page for the APEL project."
@@ -41,8 +42,8 @@ social:
     url: 
 
 # Contact Details (add as many lines as necessary). Shown in footer and on Contact page.
-email: apel-admins@stfc.ac.uk
 tickets: "https://ggus.eu/"
+email: apel-admins@stfc.ac.uk
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
     
