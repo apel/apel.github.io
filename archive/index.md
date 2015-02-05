@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: Old Versions
-subheading: APEL client and server source code
 ---
 
-Here are the olf versions for APEL.
+Here are the old versions for both APEL and APEL-SSM.

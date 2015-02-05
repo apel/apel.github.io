@@ -1,26 +1,39 @@
-{% include head.html %}
-
-<div class="wrapper">
-    <header>
-        <h1>{{site.name}}</h1>
-        <p>{{page.subheading}}</p>
-        &nbsp;
-        {% include nav.html %}
-    </header>
-    <section>
+---
+layout: page
+---
+<div class="container-fluid">
+    <div class="row centered">
         <h1> {{page.title}}</h1>
+        <h5> {{page.author}}</h5>
+    </div>
 
+    &nbsp;
+
+
+    <div class="row centered">
         {{content}}
+    </div>
 
-        &nbsp;
-        <table>
-            <td style="border: 1px solid black">
-                <a href="/updates/">Back to Updates</a>
-            </td>
-            <td style="border: 1px solid black">
-                <a href="/updates/archive/">Browse other posts</a>
-            </td>
-        </table>
-    </section>
+    &nbsp;
+
+    <div class="row centered">
+        <p> Tags: 
+            {% for tag in page.tags %}
+                <a href="/tag/{{tag}}">{{tag}} </a>
+            {% endfor %} 
+        </p>
+    </div>
+
+    <div class="row centered">
+        <div class="col-md-6 col-push-1">
+            <a class="btn btn-theme btn-block btn-lg" href="/news/">Back to News</a>
+        </div>
+        <div class="col-md-6 col-pull-2">
+            <a class="btn btn-theme btn-block btn-lg" href="/news/archive/">Browse other posts</a>
+        </div>
+    </div>
+
+    &nbsp;
+
+
 </div>
-{% include foot.html %}

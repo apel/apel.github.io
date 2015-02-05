@@ -1,21 +1,42 @@
-{% include head.html %}
-<div class="wrapper">
-    <header>
-        <h1>{{ site.name }}</h1>
-        <p>{{page.subheading}}</p>
-         
-        <ul>
-            <li><a href="{{page.zipball-link}}">Download <strong>ZIP File</strong></a></li>
-            <li><a href="{{page.tarball-link}}">Download <strong>TAR Ball</strong></a></li>
-            <li><a href="{{page.project-url}}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        &nbsp;
-        {% include nav.html %}
-    </header>
-    <section>
+---
+layout: default
+---
 
-    {{ content }}
+{% include wrap.html %}
 
-    </section>
+<div class="service">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-md-6 col-md-push-3">
+                <h1> Download APEL </h1>
+                <a id ="sl5-download" class="btn btn-theme" href="/downloads/latest/SL5">Download <strong>SL5 RPM</strong></a>
+                <a id ="sl6-download" class="btn btn-theme" href="/downloads/latest/SL6">Download <strong>SL6 RPM</strong></a>
+                <a class="btn btn-theme" href="{{page.project-url}}">View On <strong>GitHub</strong></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mtb">
+            <div class="col-md-6">
+  
+            {{ content }}
+
+            </div>
+            <div class="col-md-5 col-md-push-1">
+                    <h1>Latest News</h1>
+                    {% for post in site.posts limit:1 %}
+                        <a href="{{ post.url }}">
+                        <h2>{{ post.title }}</h2>
+                        <p> Tags: 
+                            {% for tag in post.tags %}
+                                <a href="/tag/{{tag}}">{{tag}} </a>
+                            {% endfor %} 
+                        </p>
+                        <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
+                        <div>{{ post.excerpt |truncatehtml | truncatewords: 60 }}</div>
+                        </a>
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
 </div>
-{% include foot.html %}

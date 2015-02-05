@@ -1,84 +1,79 @@
-# Where things are
-name: APEL
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
-data_source: ./_data
-collections: null
+### GENERAL SETTINGS ###
 
-# Handling Reading
-safe:         false
-include:      [".htaccess"]
-exclude:      []
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-textile_ext:  "textile"
+# Site settings
+title: APEL
+subheading: APEL client and server source code
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "" #important: start with /
+url: "http://apel.github.io"
 
-# Filtering Content
-show_drafts: null
-limit_posts: 0
-future:      true
-unpublished: false
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
-# Plugins
-whitelist: []
-gems:      []
-
-# Conversion
-markdown:    redcarpet
-highlighter: pygments
-lsi:         false
-excerpt_separator: "\n\n"
-
+colors:  #in hex code if not noted else
+  primary: "#00b3fe" #"#F70031" 
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
+  secondary: "#384452" #"#33004D"
+  link: "#428bca"
+  link_hover: "#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
+ 
 # Serving
 detach:  false
 port:    8080
 host:    0.0.0.0
 baseurl: "" # does not include hostname
+  
+### CONTACT SETTINGS ###
 
-# Backwards-compatibility
-relative_permalinks: false
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: dribbble
+    url:
+  - title: facebook
+    url:
+  - title: twitter
+    url: 
+  - title: instagram
+    url: 
+  - title: tumblr
+    url: 
+    
+# Contact Details (add as many lines as necessary). Shown in footer and on Contact page.
+email: hello@solidtheme.com
+tel: +34 8493-4893
 
-# Outputting
-permalink:     date
-paginate_path: /page:num
-timezone:      null
+### GENERAL DATA FOR VARIOUS LOCATIONS ###
+    
+# Maintainers information. Shown on About page.
+maintainers:
+  - name: Adrian Coveney
+    url: https://github.com/tofu-rocketry
+  - name: Stuart Pullinger
+    url: https://github.com/stuartpullinger
+    
+# Contributors information. Shown on Home and About pages.
+contributors:
+  - name: Alison Packer 
+    url: https://github.com/alisonpacker
+  - name: Henning Perl 
+    url: https://github.com/hperl
+  - name: Josh Hadley
+    url: https://github.com/CJoriginal
+  - name: Konrad Jopek
+    url: https://github.com/kjopek
+  - name: Will Rogers
+    url: https://github.com/willrogers
 
-quiet:    false
-defaults: []
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
-# Markdown Processors
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-  fenced_code_blocks: true
-
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids:      true
-  footnote_nr:   1
-  entity_output: as_char
-  toc_levels:    1..6
-  smart_quotes:  lsquo,rsquo,ldquo,rdquo
-  use_coderay:   false
-
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
-
-redcloth:
-  hard_breaks: true
+# Testimonial content. Shown on Home and About page. 
+testimonial:
+    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    author: Marcel Newman
+    position: WEB DESIGNER - BLACKTIE.CO

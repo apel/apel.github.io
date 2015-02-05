@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: document
 title: Documentation
-subheading: APEL client and server source code
+subheading: Project and User Documentation.
 ---
 
-Welcome to the documentation page for the APEL Project
-
-Documentation will be placed here.
+Welcome to the documentation page for the APEL Project.
