@@ -2,8 +2,10 @@
 
 # Site settings
 title: APEL
+# Default subheading if not defined in a page's index.md
 subheading: APEL client and server source code
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+# The description will appear in the document head meta (for Google search results) and in the feed.xml site description.
+description: "GitHub Page for the APEL project."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://apel.github.io"
@@ -38,14 +40,10 @@ social:
     url:
   - title: twitter
     url: 
-  - title: instagram
-    url: 
-  - title: tumblr
-    url: 
-    
+
 # Contact Details (add as many lines as necessary). Shown in footer and on Contact page.
-email: hello@solidtheme.com
-tel: +34 8493-4893
+tickets: "https://ggus.eu/"
+email: apel-admins@stfc.ac.uk
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
     
@@ -66,14 +64,12 @@ contributors:
     url: https://github.com/CJoriginal
   - name: Konrad Jopek
     url: https://github.com/kjopek
+  - name: konvpalto
+    url: https://github.com/konvpalto
+  - name: Pablo Orviz
+    url: https://github.com/orviz
   - name: Will Rogers
     url: https://github.com/willrogers
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-
-# Testimonial content. Shown on Home and About page. 
-testimonial:
-    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-    author: Marcel Newman
-    position: WEB DESIGNER - BLACKTIE.CO
+about: "APEL is an accounting tool that collects accounting data from sites participating in the EGI and WLCG infrastructures as well as from sites belonging to other Grid organisations that are collaborating with EGI, including OSG, NorduGrid and INFN."

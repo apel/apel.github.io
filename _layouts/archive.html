@@ -10,11 +10,11 @@ layout: default
         </div>
         <div id="tab" class="row">
             <div class="col-md-5">
-                <h2>APEL Files</h2>
+                <h2>APEL Releases</h2>
                 <ul id="apel"></ul>
             </div>
             <div class="col-md-5 col-md-push-1">
-                <h2>APEL-SSM Files</h2>
+                <h2>SSM Releases</h2>
                 <ul id="ssm"></ul>
             </div>
         </div>
@@ -44,7 +44,7 @@ layout: default
                     if (json[objCount].prerelease != true) {
                         var tag = json[objCount].tag_name;
                         var url = json[objCount].html_url;
-                        $("#apel").append('<li><a href="' + url + '"><span class="tab">' + tag + '</span></a></li>');
+                        $("#apel").append('<li><a href="' + url + '/"><span class="tab">' + tag + '</span></a></li>');
                     }
                     objCount++;
                 }
@@ -96,7 +96,7 @@ layout: default
                     if (json[objCount].prerelease != true) {
                         var tag = json[objCount].tag_name;
                         var url = json[objCount].html_url;
-                        $("#ssm").append('<li><a href="' + url + '"><span class="tab">' + tag + '</span></a></li>');
+                        $("#ssm").append('<li><a href="' + url + '/"><span class="tab">' + tag + '</span></a></li>');
                     }
                     objCount++;
                 }

@@ -1,5 +1,5 @@
 ---
 layout: blog
 title: News
-subheading: Latest Project News, Updates and Releases
+subheading: Latest news and updates
 ---
