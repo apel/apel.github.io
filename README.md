@@ -10,36 +10,39 @@ Initially add a folder into the base directory of the site. The folder should be
 
 The next step is to add an `index.md` page inside of that directory. The layout of the page should be as follows:
 
-    ---
-    layout: default <- Change if needed
-    title: APEL 
-    subheading: APEL client and server source code
-    project-url: https://github.com/apel/apel
-    ---
+```markdown
+---
+layout: default  # Change if needed
+title: APEL 
+subheading: APEL client and server source code
+project-url: https://github.com/apel/apel
+---
 
-    Page Content
+Page Content
+```
 
 The actual layout of the page is handled by html pages in the `_layout` folder. If you find yourself having to need a new _specific_ layout, feel free to copy the 'default' layout:
 
-    {% include head.html %} - Don't Touch
+```htmldjanog
+{% include head.html %} <!-- Don't modify -->
 
-    <div class="wrapper">
-        <header>
-            <h1>{{site.name}}</h1>
-            <p>{{page.subheading}}</p>
-            &nbsp;
-            {% include nav.html %}
-        </header>
-        <section>
-            <h1> {{page.title}}</h1>
+<div class="wrapper">
+    <header>
+        <h1>{{ site.name }}</h1>
+        <p>{{ page.subheading }}</p>
+        &nbsp;
+        {% include nav.html %}
+    </header>
+    <section>
+        <h1>{{ page.title }}</h1>
 
-            {{content}}
+        {{ content }}
 
-        </section>
-    </div>
+    </section>
+</div>
 
-    {% include foot.html %} - Don't Touch
-
+{% include foot.html %} <!-- Don't modify -->
+```
 
 ### 3. If directory, add page to `navbar_links.yml`
 
@@ -47,6 +50,7 @@ If the new page is a page you wish to be added to the nav bar, you will need to 
 
 To add the page use the following format and reorganise as you see fit:
 
-```
+```yml
 -   name: "Example"
     url: "/example/"
+```
