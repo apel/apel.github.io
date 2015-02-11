@@ -23,7 +23,7 @@ Page Content
 
 The actual layout of the page is handled by html pages in the `_layout` folder. If you find yourself having to need a new _specific_ layout, feel free to copy the 'default' layout:
 
-```htmldjanog
+```htmldjango
 {% include head.html %} <!-- Don't modify -->
 
 <div class="wrapper">
