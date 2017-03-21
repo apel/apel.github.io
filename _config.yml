@@ -45,8 +45,8 @@ social:
     url: 
 
 # Contact Details (add as many lines as necessary). Shown in footer and on Contact page.
-tickets: "https://ggus.eu/"
-email: apel-admins@stfc.ac.uk
+tickets: https://ggus.eu/
+email: apel-admins [at] stfc.ac.uk
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
     
@@ -54,13 +54,15 @@ email: apel-admins@stfc.ac.uk
 maintainers:
   - name: Adrian Coveney
     url: https://github.com/tofu-rocketry
-  - name: Stuart Pullinger
-    url: https://github.com/stuartpullinger
+  - name: Greg Corbett
+    url: https://github.com/gregcorbett
     
 # Contributors information. Shown on Home and About pages.
 contributors:
   - name: Alison Packer 
     url: https://github.com/alisonpacker
+  - name: David Rebatto
+    url: https://github.com/drebatto
   - name: Henning Perl 
     url: https://github.com/hperl
   - name: Josh Hadley
@@ -71,6 +73,10 @@ contributors:
     url: https://github.com/konvpalto
   - name: Pablo Orviz
     url: https://github.com/orviz
+  - name: Pavel Demin
+    url: https://github.com/pavel-demin
+  - name: Stuart Pullinger
+    url: https://github.com/stuartpullinger
   - name: Will Rogers
     url: https://github.com/willrogers
 
