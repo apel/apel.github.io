@@ -10,7 +10,8 @@ layout: page
         <h2>{{ post.title }}</h2>
         <p> Tags: 
             {% for tag in post.tags %}
-                <a href="/tag/{{tag}}/">{{tag}} </a>
+                <!--<a href="/tag/{{ tag }}/">{{ tag }}</a>-->
+                {{ tag }}
             {% endfor %} 
         </p>
         <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
@@ -30,7 +31,8 @@ layout: page
         <h2>{{ post.title }}</h2> 
         <p> Tags: 
             {% for tag in post.tags %}
-                <a href="/tag/{{tag}}/">{{tag}} </a>
+                <!--<a href="/tag/{{ tag }}/">{{ tag }}</a>-->
+                {{ tag }}
             {% endfor %} 
         </p>  
         <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
