@@ -1,5 +1,5 @@
 language: ruby
-rvm: 2.1
+rvm: 2.3.3
 
 sudo: false
 cache: bundler
@@ -9,4 +9,4 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true  # speeds up installation of html-proofer
 
 script:
-  - bundle exec jekyll build && bundle exec htmlproof ./_site
+  - bundle exec jekyll build && bundle exec htmlproofer ./_site
