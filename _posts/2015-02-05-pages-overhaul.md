@@ -3,8 +3,7 @@ layout: post
 title: Pages Overhaul
 author: Adrian Coveney
 tags:
-- Update
+- update
 ---
 
 Welcome to the newly overhauled APEL GitHub Pages.
-<!--more-->
