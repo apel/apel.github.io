@@ -16,7 +16,7 @@ layout: default
 
             <div hidden id="sl-type">{{page.type}}</div>
 
-            <a id="apel-src-download" class="btn btn-theme" href="https://github.com/apel/apel/releases/latest">Source</a>
+            <a id="apel-src-download" class="btn btn-theme" href="https://github.com/apel/apel/releases/latest">Source RPM</a>
             <a id="apel-client-download" class="btn btn-theme" href="https://github.com/apel/apel/releases/latest">Client</a>
             <a id="apel-server-download" class="btn btn-theme" href="https://github.com/apel/apel/releases/latest">Server</a>
             <a id="apel-lib-download" class="btn btn-theme" href="https://github.com/apel/apel/releases/latest">Lib</a>
@@ -37,11 +37,11 @@ layout: default
 
                         var type = document.getElementById("sl-type").textContent;
 
-                        if (type == "SL5") {
-                            type = "el5";
+                        if (type == "SL6") {
+                            type = "el6";
                         }
                         else {
-                            type = "el6";
+                            type = "el7";
                         }
 
                         var found = false;
@@ -69,7 +69,7 @@ layout: default
                                 document.getElementById("apel-server-download").href= rpms[4].browser_download_url;
                             
                                 //Set HREFs to relevant urls
-                                $(".version").text("Version: " + json[objCount].tag_name);
+                                $(".version").text("APEL version: " + json[objCount].tag_name);
 
                                 // exit loop
                                 found = true;

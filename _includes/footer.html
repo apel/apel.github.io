@@ -17,12 +17,12 @@
                 </ul>
             </div>
             <!--- Contributors -->
-            <div class="col-lg-2">
+            <div class="col-lg-3">
                 <h4>Contributors</h4>
                 <div class="hline-w"></div>
-                <ul>
+                <ul class="list-inline">
                     {% for person in site.contributors %}
-                        <li><a href="{{ person.url }}" class="btn-outline">{{ person.name }}</a></li>
+                        <li class="col-lg-6"><a href="{{ person.url }}" class="btn-outline">{{ person.name }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -36,7 +36,7 @@
                     {% endfor %}
                 </p>
             </div> -->
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <h4>Contact Details</h4>
                 <div class="hline-w"></div>
                 <p>
