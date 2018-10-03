@@ -5,7 +5,7 @@ subheading: APEL
 project-url: https://github.com/apel
 ---
 
-#Welcome to APEL
+# Welcome to APEL
 
 This is the GitHub Page for the APEL project.
 
@@ -15,9 +15,9 @@ The accounting information is gathered from different sensors into a central acc
 
 Statistics are available for view in different detail by Users, VO Managers, Site Administrators and anonymous users according to well defined access rights. 
 
-##Software Status
+## Software Status
 
-###APEL
+### APEL
 [![GitHub release](https://img.shields.io/github/release/apel/apel.svg)](https://github.com/apel/apel/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues-raw/apel/apel.svg)](https://github.com/apel/apel/issues)
 
@@ -26,7 +26,7 @@ Statistics are available for view in different detail by Users, VO Managers, Sit
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b614b03d576a4f5cbb6efa2e64e5f7ef)](https://www.codacy.com/app/apel/apel)
 [![Maintainability](https://api.codeclimate.com/v1/badges/03094b74f5fc4f728bc7/maintainability)](https://codeclimate.com/github/apel/apel/maintainability)
 
-###SSM
+### SSM
 [![GitHub release](https://img.shields.io/github/release/apel/ssm.svg)](https://github.com/apel/ssm/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues-raw/apel/ssm.svg)](https://github.com/apel/ssm/issues)
 
