@@ -10,6 +10,8 @@ analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://apel.github.io"
 
+safe: true
+
 # Travis bundles gems in the vendor directory which Jekyll will fail on if it's not excluded.
 exclude: [vendor]
 
@@ -26,13 +28,7 @@ colors:  #in hex code if not noted else
   link_hover: "#01b2fe"
   footer_heading: "#ffffff"
   footer_content: "#bfc9d3"
- 
-# Serving
-detach:  false
-port:    8080
-host:    0.0.0.0
-baseurl: "" # does not include hostname
-  
+
 ### CONTACT SETTINGS ###
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
