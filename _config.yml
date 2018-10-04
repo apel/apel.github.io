@@ -8,7 +8,7 @@ subheading: APEL client and server source code
 description: "GitHub Page for the APEL project."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "http://apel.github.io"
+url: "https://apel.github.io"
 
 safe: true
 
