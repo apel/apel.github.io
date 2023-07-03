@@ -19,18 +19,18 @@ Statistics are available for view in different detail by Users, VO Managers, Sit
 
 ### APEL
 [![GitHub release](https://img.shields.io/github/release/apel/apel.svg)](https://github.com/apel/apel/releases/latest)
+[![Build Status](https://travis-ci.org/apel/apel.svg?branch=dev)](https://travis-ci.org/apel/apel)
 [![GitHub issues](https://img.shields.io/github/issues-raw/apel/apel.svg)](https://github.com/apel/apel/issues)
 
-[![Build Status](https://travis-ci.org/apel/apel.svg?branch=dev)](https://travis-ci.org/apel/apel)
-[![Coverage Status](https://coveralls.io/repos/github/apel/apel/badge.svg?branch=dev)](https://coveralls.io/github/apel/apel?branch=dev)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b614b03d576a4f5cbb6efa2e64e5f7ef)](https://www.codacy.com/app/apel/apel)
+[![codecov](https://codecov.io/gh/apel/apel/branch/dev/graph/badge.svg?token=YetTFdOZo0)](https://codecov.io/gh/apel/apel)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a8cdc36c46b241e6a77428fbfb6f23bd)](https://www.codacy.com/gh/apel/apel/dashboard)
 [![Maintainability](https://api.codeclimate.com/v1/badges/03094b74f5fc4f728bc7/maintainability)](https://codeclimate.com/github/apel/apel/maintainability)
 
 ### SSM
 [![GitHub release](https://img.shields.io/github/release/apel/ssm.svg)](https://github.com/apel/ssm/releases/latest)
+[![Build Status](https://travis-ci.org/apel/ssm.svg?branch=dev)](https://travis-ci.org/apel/ssm)
 [![GitHub issues](https://img.shields.io/github/issues-raw/apel/ssm.svg)](https://github.com/apel/ssm/issues)
 
-[![Build Status](https://travis-ci.org/apel/ssm.svg?branch=dev)](https://travis-ci.org/apel/ssm)
-[![Coverage Status](https://coveralls.io/repos/github/apel/ssm/badge.svg?branch=dev)](https://coveralls.io/github/apel/ssm?branch=dev)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cc3e808664ee41638938aa5c660a88ae)](https://www.codacy.com/app/apel/ssm)
+[![codecov](https://codecov.io/gh/apel/ssm/branch/dev/graph/badge.svg?token=ySjD8zgHKP)](https://codecov.io/gh/apel/ssm)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9d2b1c88ab844f0081e5fafab49b269d)](https://www.codacy.com/gh/apel/ssm/dashboard)
 [![Maintainability](https://api.codeclimate.com/v1/badges/34aa04f3583afce2ceb2/maintainability)](https://codeclimate.com/github/apel/ssm/maintainability)
