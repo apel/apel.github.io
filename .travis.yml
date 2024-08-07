@@ -1,6 +1,7 @@
 language: ruby
-rvm: 3.3.3 # Pinned it to this version because the current stable
-           # version 3.3.4 isn't available in 'travis-ci-language-archive' yet
+rvm: 3.3.3
+# Pinned rvm to `3.3.3` version because the current stable
+# version 3.3.4 isn't available in 'travis-ci-language-archive' yet
 
 cache: bundler
 
