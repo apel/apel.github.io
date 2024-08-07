@@ -14,9 +14,8 @@ layout: default
 
             <h2 class="version"></h2>
 
-            <div hidden id="sl-type">{{page.type}}</div>
+            <div hidden id="el-type">{{page.type}}</div>
 
-            <a id="apel-src-download" class="btn btn-theme" href="https://github.com/apel/apel/releases/latest">Source RPM</a>
             <a id="apel-client-download" class="btn btn-theme" href="https://github.com/apel/apel/releases/latest">Client</a>
             <a id="apel-server-download" class="btn btn-theme" href="https://github.com/apel/apel/releases/latest">Server</a>
             <a id="apel-lib-download" class="btn btn-theme" href="https://github.com/apel/apel/releases/latest">Lib</a>
@@ -35,12 +34,13 @@ layout: default
                 // Successful JSON request
                     .success(function (json) {
 
-                        var type = document.getElementById("sl-type").textContent;
+                        var type = document.getElementById("el-type").textContent;
 
-                        if (type == "SL6") {
-                            type = "el6";
-                        }
-                        else {
+                        if (type == "El9") {
+                            type = "el9";
+                        } else if (type == "El8") {
+                            type = "el8";
+                        } else {
                             type = "el7";
                         }
 
@@ -54,7 +54,7 @@ layout: default
 
                                 var rpms = [];
 
-                                for (var x = 0; x < 10; x++) {
+                                for (var x = 0; x < 15; x++) {
                                     var data = json[objCount].assets[x].name;
 
                                     if (data.indexOf(type) >= 0) {
@@ -62,11 +62,10 @@ layout: default
                                     }
                                 }
 
-                                document.getElementById("apel-src-download").href= rpms[0].browser_download_url;
-                                document.getElementById("apel-client-download").href= rpms[1].browser_download_url;
-                                document.getElementById("apel-lib-download").href= rpms[2].browser_download_url;
-                                document.getElementById("apel-parsers-download").href= rpms[3].browser_download_url;
-                                document.getElementById("apel-server-download").href= rpms[4].browser_download_url;
+                                document.getElementById("apel-client-download").href= rpms[0].browser_download_url;
+                                document.getElementById("apel-lib-download").href= rpms[1].browser_download_url;
+                                document.getElementById("apel-parsers-download").href= rpms[2].browser_download_url;
+                                document.getElementById("apel-server-download").href= rpms[3].browser_download_url;
                             
                                 //Set HREFs to relevant urls
                                 $(".version").text("APEL version: " + json[objCount].tag_name);
