@@ -23,7 +23,7 @@ Statistics are available for view in different detail by Users, VO Managers, Sit
 [![GitHub issues](https://img.shields.io/github/issues-raw/apel/apel.svg)](https://github.com/apel/apel/issues)
 
 [![codecov](https://codecov.io/gh/apel/apel/branch/dev/graph/badge.svg?token=YetTFdOZo0)](https://codecov.io/gh/apel/apel)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a8cdc36c46b241e6a77428fbfb6f23bd)](https://www.codacy.com/gh/apel/apel/dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a8cdc36c46b241e6a77428fbfb6f23bd)](https://app.codacy.com/gh/apel/apel/dashboard)
 [![Maintainability](https://api.codeclimate.com/v1/badges/03094b74f5fc4f728bc7/maintainability)](https://codeclimate.com/github/apel/apel/maintainability)
 
 ### SSM
@@ -32,5 +32,5 @@ Statistics are available for view in different detail by Users, VO Managers, Sit
 [![GitHub issues](https://img.shields.io/github/issues-raw/apel/ssm.svg)](https://github.com/apel/ssm/issues)
 
 [![codecov](https://codecov.io/gh/apel/ssm/branch/dev/graph/badge.svg?token=ySjD8zgHKP)](https://codecov.io/gh/apel/ssm)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9d2b1c88ab844f0081e5fafab49b269d)](https://www.codacy.com/gh/apel/ssm/dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9d2b1c88ab844f0081e5fafab49b269d)](https://app.codacy.com/gh/apel/ssm/dashboard)
 [![Maintainability](https://api.codeclimate.com/v1/badges/34aa04f3583afce2ceb2/maintainability)](https://codeclimate.com/github/apel/ssm/maintainability)
